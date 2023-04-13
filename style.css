@@ -1,0 +1,210 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: cursive;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 100px;
+}
+
+.nav {
+    background: white;
+    padding: 10px;
+    margin: 0;
+    box-shadow: 0px 2px 6px 1px darkgray;
+}
+
+h1 {
+    margin-left: 45px;
+}
+
+/* Modal Dialogue */
+dialog#formDialog {
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px 30px;
+}
+
+.close {
+    font-size: x-large;
+    position: absolute;
+    left: 90%;
+    top: 1px;
+    cursor: pointer;
+    color: black;
+}
+
+.close:hover {
+    color: red;
+    margin-top: -2px;
+}
+
+button,input#submit {
+    padding: 15px;
+    background: #009688;
+    color: white;
+    font-size: large;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    letter-spacing: 1px;
+    margin-left: 3%;
+}
+
+button:hover,input#submit:hover {
+    background: #04685f;
+    cursor: pointer;
+}
+
+input#submit {
+    margin-left: initial;
+    margin-top: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: left;
+}
+
+form label,input[type='submit'] {
+    margin-top: 3px;
+    font-size: large;
+}
+
+input[type="text"], input[type='number'] {
+    padding: 10px;
+    height: 40px;
+    font-size: large;
+    font-family: cursive;
+    border: none;
+    background: #e0f2f187;
+}
+
+input[type='text' ]:focus-visible,input[type='number']:focus-visible {
+    outline: none;
+    border-bottom: 1px solid #009688;
+}
+
+/* content books */
+div#containeur {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+div.livre {
+    padding: 20px;
+    background: #80306200;
+    color: #000000;
+    width: 300px;
+    font-size: larger;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 0px 3px 1px #426271;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.livre label {
+    overflow-wrap: anywhere;
+    text-align: center;
+}
+
+.livre label.title {
+    text-transform: uppercase;
+    font-size: x-large;
+}
+
+.conteneurBook {
+    margin: 0 3%;
+}
+
+div.checkRead {
+    display: flex;
+    justify-content: center;
+}
+
+div.checkRead label {
+    color: white;
+    background: #009688;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+label.yes {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+label.no {
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+input#read_1:checked ~ label.yes,input#read_2:checked ~ label.no {
+    background: #e91e63e0;
+}
+
+.noRead {
+    background: #D81B60;
+}
+
+.noRead:hover {
+    background: #C2185B
+}
+
+.read {
+    background: #388E3C;
+}
+
+.read:hover {
+    background: darkgreen
+}
+/* Footer */
+footer {
+    box-shadow: 0px 0px 4px -1px #004D40;
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    display: flex;
+    padding-top: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+
+footer {
+    box-shadow: 0px 0px 4px -1px #004D40;
+    position: absolute;
+    bottom: 0px;
+    height: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+footer label {
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+footer a img {
+    width: 25px;
+    margin-left: 10px;
+}
