@@ -195,13 +195,12 @@ footer {
     height: 40px;
     display: flex;
     width: 100%;
-    justify-content: center;
+    align-items: flex-start;
 }
 
 footer label {
     display: flex;
-    align-items: flex-end;
-    padding: 20px;
+    align-items: center;
 }
 
 footer a img {
