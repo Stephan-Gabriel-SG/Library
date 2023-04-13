@@ -83,7 +83,7 @@ form label,input[type='submit'] {
 
 input[type="text"], input[type='number'] {
     padding: 10px;
-    height: 40px;
+    height: 20px;
     font-size: large;
     font-family: cursive;
     border: none;
